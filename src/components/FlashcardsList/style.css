@@ -1,0 +1,15 @@
+.flashcards-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    border: 1px solid black;
+    max-height: 600px;
+    overflow-y: scroll;
+}
+.flashcards-list__loader {
+    height:300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

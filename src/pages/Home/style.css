@@ -1,0 +1,13 @@
+.listItem {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.listItem__answer {
+    width: 50%;
+}
+
+.flashcard-question {
+    padding-bottom: 16px;
+}

@@ -1,0 +1,29 @@
+.loginPage {
+    width: 100%;
+    height: 100vh;
+    background-image: url("./../../Img/backgroundLogin.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginPage__form {
+    padding: 12px 24px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(4px);
+    border-radius: 12px;
+
+}
+
+.loginPage__form input {
+    margin: 8px 0;
+    font-size: 18px;
+}
+
+.loginPage__submit {
+    align-self: flex-end;
+    padding: 8px;
+}

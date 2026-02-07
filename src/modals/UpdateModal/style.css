@@ -1,0 +1,35 @@
+.update-modal {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.update-modal__content {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 32px;
+    box-shadow: 0 4px 8px 0 rgba(104, 95, 95, 0.2), 0 6px 20px 0 rgba(83, 74, 74, 0.19);
+}
+
+.update-modal__content--header {
+    padding-bottom: 16px;
+}
+
+.update-modal__content--inputs {
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.update-modal__content--buttons {
+    display: flex;
+    justify-content: flex-end;
+}
