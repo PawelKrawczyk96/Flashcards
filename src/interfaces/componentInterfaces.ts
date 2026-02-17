@@ -67,3 +67,18 @@ export interface IButton {
   children: React.ReactNode;
   icon?: React.ReactNode;
 }
+
+interface IStatisticsDescription {
+  description: string;
+  isPositive: boolean;
+}
+
+export type cardColor = "purple" | "green" | "orange" | "red";
+
+export interface IStatisticsCard {
+  title: string;
+  icon?: React.ReactNode;
+  iconColor: cardColor;
+  statisticNumber: number;
+  statisticDescription: IStatisticsDescription;
+}

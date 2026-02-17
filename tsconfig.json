@@ -30,7 +30,8 @@
       "@services/*": ["services/*"],
       "@utils/*": ["utils/*"],
       "@layouts/*": ["layouts/*"],
-      "@modals/*": ["modals/*"]
+      "@modals/*": ["modals/*"],
+      "@icons/*": ["icons/*"]
     },
     "allowSyntheticDefaultImports": true
   },
