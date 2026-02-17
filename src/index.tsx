@@ -4,6 +4,9 @@ import "./index.css";
 import { RouterProvider } from "react-router";
 import { router } from "@services/routes";
 import { AuthProvider } from "./context/authContext";
+import "./styles/globals.css";
+
+//TODO: make Typography and import font familly
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement,
