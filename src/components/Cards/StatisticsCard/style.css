@@ -38,6 +38,7 @@
 }
 
 .statistics-card__image-wrapper {
+  --bg-color: transparent;
   display: inline-flex;
   align-items: center;
   justify-content: center;
