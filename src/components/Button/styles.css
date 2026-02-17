@@ -1,0 +1,61 @@
+.btn {
+    border-radius: 8px;
+    padding: 10px 16px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn--icon {
+    fill: var(--white)
+}
+
+.btn--primary {
+    color: var(--white);
+    background-color: var(--primary-600);
+}
+
+.btn--primaryBig {
+    color: var(--white);
+    background-color: var(--primary-600);
+    padding: 14px 32px;
+    font-weight: bold;
+    box-shadow:
+        0px 10px 15px -3px var(--primary-200),
+        0px 4px 6px -4px var(--primary-200);
+}
+
+.btn--secondary {
+    color: var(--neutral-700);
+    background-color: var(--white);
+    border: 1px solid var(--neutral-200)
+}
+
+.btn--ghost {
+    color: var(--primary-600);
+    background-color: var(--white);
+    border: none;
+}
+
+.btn--dangerOutline {
+    color: var(--danger-600);
+    background-color: var(--white);
+    border: 1px solid var(--danger-200);
+}
+
+.btn--dangerSolid {
+    color: var(--white);
+    background-color: var(--danger-600);
+    border: none;
+}
+
+.btn--filterChip {
+    padding: 6px 12px;
+    color: var(--neutral-700);
+    background-color: var(--white);
+}
+
+.btn--filterChip.active {
+    color: var(--white);
+    background-color: var(--neutral-900);
+}

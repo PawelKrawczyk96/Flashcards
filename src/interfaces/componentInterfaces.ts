@@ -1,3 +1,5 @@
+import React from "react";
+
 export interface IMenuItems {
   name: string;
   path: string;
@@ -48,4 +50,20 @@ export interface IFlashcardGameItem {
 
 export interface IFlashcardGameItemProps extends IFlashcardGameItem {
   onSubmit: (correctAnswer: boolean) => void;
+}
+
+type buttonVariant =
+  | "primary"
+  | "primaryBig"
+  | "secondary"
+  | "dangerOutline"
+  | "dangerSolid"
+  | "ghost"
+  | "filterChip";
+
+export interface IButton {
+  onClick: () => void;
+  variant: buttonVariant;
+  children: React.ReactNode;
+  icon?: React.ReactNode;
 }
