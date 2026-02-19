@@ -3,12 +3,19 @@ import { getProperIconColor } from "@utils/utils";
 import "./style.css";
 import { CSSProperties } from "react";
 
-export const CardIcon = ({ icon, iconColor, backgroundColor }: ICardIcon) => {
+export const CardIcon = ({
+  icon,
+  iconColor,
+  backgroundColor,
+  opacity,
+}: ICardIcon) => {
   return (
     <div
       className="cardIcon"
       style={{
-        backgroundColor: `rgba(${getProperIconColor(backgroundColor)}, 0.1)`,
+        backgroundColor: backgroundColor
+          ? `rgba(${getProperIconColor(backgroundColor)}, ${opacity ? opacity : 0.1})`
+          : "transparent",
       }}
     >
       <span

@@ -21,4 +21,5 @@
 
 .cardIcon--icon svg path {
   stroke: currentColor;
+  fill: currentColor;
 }

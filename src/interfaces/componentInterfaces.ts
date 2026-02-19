@@ -82,3 +82,17 @@ export interface IStatisticsCard {
   statisticNumber: number;
   statisticDescription: IStatisticsDescription;
 }
+
+export interface IHintCard {
+  icon: React.ReactNode;
+  header: string;
+  text: string;
+  buttonLabel: string;
+}
+
+export interface ICardIcon {
+  icon: React.ReactNode;
+  backgroundColor?: cardColor;
+  opacity?: number;
+  iconColor: string;
+}
