@@ -1,0 +1,24 @@
+.cardIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.cardIcon--icon {
+  --icon-fill: transparent;
+  color: var(--icon-fill);
+}
+
+.cardIcon--icon svg {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.cardIcon--icon svg path {
+  stroke: currentColor;
+}
