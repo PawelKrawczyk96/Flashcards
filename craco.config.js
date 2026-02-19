@@ -12,6 +12,7 @@ module.exports = {
       "@utils": path.resolve(__dirname, "src/utils"),
       "@layouts": path.resolve(__dirname, "src/layouts"),
       "@modals": path.resolve(__dirname, "src/modals"),
+      "@icons": path.resolve(__dirname, "src/icons"),
     },
   },
 };
