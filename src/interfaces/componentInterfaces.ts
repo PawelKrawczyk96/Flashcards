@@ -75,6 +75,12 @@ interface IStatisticsDescription {
 
 export type cardColor = "purple" | "green" | "orange" | "red";
 
+export interface ICardIcon {
+  icon: React.ReactNode;
+  iconColor: string;
+  backgroundColor: cardColor;
+}
+
 export interface IStatisticsCard {
   title: string;
   icon?: React.ReactNode;
@@ -82,3 +88,23 @@ export interface IStatisticsCard {
   statisticNumber: number;
   statisticDescription: IStatisticsDescription;
 }
+
+export interface IMeterCard {
+  icon: React.ReactNode;
+  iconColor: cardColor;
+  name: string;
+  onClick: () => void;
+  flashcardsCount: number;
+  flashcardsCompleted: number;
+  lastTimeInfo: number;
+}
+
+export interface IMeterCardInfo extends Omit<
+  IMeterCard,
+  "flashcardsCompleted"
+> {}
+
+export interface IMeterCardStatusBar extends Pick<
+  IMeterCard,
+  "flashcardsCount" | "flashcardsCompleted"
+> {}

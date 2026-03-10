@@ -1,0 +1,47 @@
+.meterCardInfo {
+}
+
+.meterCardInfo--info__main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.meterCardInfo--info__main-wrapper {
+  display: flex;
+}
+
+.meterCardInfo--info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 12px;
+}
+
+.meterCardInfo--info h1 {
+  color: var(--neutral-900);
+  font-weight: 900;
+  padding-bottom: 4px;
+}
+
+.meterCardInfo--info p {
+  color: var(--neutral-500);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.meterCardInfo--header {
+  font-size: 16px;
+}
+
+.meterCardInfo--arrow {
+  border: none;
+  background-color: transparent;
+  position: relative;
+  top: 18px;
+  left: -5px;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid var(--neutral-300);
+  border-bottom: 2px solid var(--neutral-300);
+  transform: rotate(-45deg);
+}
