@@ -26,3 +26,43 @@ export const getProperIconColor = (colors: cardColor) => {
       return "244, 63, 94";
   }
 };
+
+export const getPercent = (all: number, part: number): number => {
+  if (all > 0 && part < all && part >= 0) return (part / all) * 100;
+  return 0;
+};
+
+export const getTimeIndicator = (
+  timestamp: number,
+): {
+  timeType: string;
+  timeCount: number;
+} => {
+  const now: number = Date.now();
+  const actionDiffInSeconds: number = (now - timestamp) / 1000;
+  switch (true) {
+    case Math.floor(actionDiffInSeconds / 604800) > 1:
+      return {
+        timeType: "week",
+        timeCount: Math.floor(actionDiffInSeconds / 604800),
+      };
+
+    case Math.floor(actionDiffInSeconds / 86400) > 1:
+      return {
+        timeType: "day",
+        timeCount: Math.floor(actionDiffInSeconds / 86400),
+      };
+
+    case Math.floor(actionDiffInSeconds / 3600) > 1:
+      return {
+        timeType: "hour",
+        timeCount: Math.floor(actionDiffInSeconds / 3600),
+      };
+
+    default:
+      return {
+        timeType: "minute",
+        timeCount: Math.floor(actionDiffInSeconds / 60),
+      };
+  }
+};

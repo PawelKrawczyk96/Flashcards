@@ -1,0 +1,5 @@
+.meterCard {
+  border: 1px solid var(--neutral-200);
+  border-radius: 12px;
+  padding: 21px;
+}

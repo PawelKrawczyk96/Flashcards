@@ -1,2 +1,1 @@
-export * from "./StatisticsCard";
 export * from "./LastPlayedSetsCard";
