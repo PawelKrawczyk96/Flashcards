@@ -1,10 +1,15 @@
-.panel__container {
-    padding: 24px 0;
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-.footer {
-    position: absolute;
-    bottom: 0;
-    padding: 12px ;
-    background-color: bisque;
+.layout__top {
+  display: flex;
+  flex: 1; /* zajmuje całą wysokość oprócz footer */
+}
+
+.layout__content {
+  flex: 1; /* outlet bierze resztę miejsca */
+  min-width: 0; /* ważne żeby content się nie wypychał */
 }

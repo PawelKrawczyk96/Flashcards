@@ -24,6 +24,8 @@ export const getProperIconColor = (colors: cardColor) => {
       return "245, 158, 11";
     case "red":
       return "244, 63, 94";
+    case "white":
+      return "255, 255, 255";
   }
 };
 

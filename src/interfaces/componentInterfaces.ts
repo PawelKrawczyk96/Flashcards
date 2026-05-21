@@ -73,12 +73,13 @@ interface IStatisticsDescription {
   isPositive: boolean;
 }
 
-export type cardColor = "purple" | "green" | "orange" | "red";
+export type cardColor = "purple" | "green" | "orange" | "red" | "white";
 
 export interface ICardIcon {
   icon: React.ReactNode;
   iconColor: string;
   backgroundColor: cardColor;
+  backgroundOpacity: number;
 }
 
 export interface IStatisticsCard {
@@ -108,3 +109,13 @@ export interface IMeterCardStatusBar extends Pick<
   IMeterCard,
   "flashcardsCount" | "flashcardsCompleted"
 > {}
+
+export interface ISidebarMenuItem {
+  icon: React.ReactNode;
+  name: string;
+  path: string;
+}
+
+export interface IMenuItems extends ISidebarMenuItem {
+  path: string;
+}
