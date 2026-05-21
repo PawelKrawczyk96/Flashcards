@@ -16,7 +16,12 @@ export const LastPlayedSetsCardInfo = ({
     <div className="meterCardInfo">
       <div className="meterCardInfo--info__main">
         <div className="meterCardInfo--info__main-wrapper">
-          <CardIcon icon={icon} iconColor={iconColor} backgroundColor={"red"} />
+          <CardIcon
+            icon={icon}
+            iconColor={iconColor}
+            backgroundColor={"red"}
+            backgroundOpacity={0.1}
+          />
           <div className="meterCardInfo--info">
             <h1 className="meterCardInfo--header">{name}</h1>
             <p className="meterCardInfo--stats">{`${flashcardsCount} fiszek • Ostatnio: ${time.timeCount} ${time.timeType}`}</p>

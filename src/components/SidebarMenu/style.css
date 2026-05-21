@@ -1,0 +1,23 @@
+.sidebarMenu {
+  width: 256px;
+  background-color: var(--neutral-900);
+  min-height: calc(100vh - 60px); /* footer height */
+}
+
+.sidebarMenu--header {
+  display: flex;
+  padding: 24px;
+}
+.sidebarMenu--header__title {
+  color: var(--white);
+  font-size: 24px;
+  line-height: 1.75;
+  padding-left: 12px;
+  font-weight: 500;
+}
+.sidebarMenu--menu {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 12px;
+  border-top: 1px solid var(--neutral-700);
+}

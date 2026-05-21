@@ -1,19 +1,20 @@
-import { Header } from "@components/Header/Header";
-import { menuItems } from "@consts/const";
 import { Outlet } from "react-router";
-import { Grid, Container, Box } from "@mui/material";
+import { Container, Box } from "@mui/material";
 import "./style.css";
+import { SidebarMenu } from "@components/SidebarMenu";
 
 export const RootLayout = () => {
   return (
-    <Grid>
-      <Header menuItems={menuItems} />
-      <Container maxWidth="xl" className="panel__container">
-        <Outlet />
-      </Container>
-      <Box className="footer" width="100%">
-        <p>footer</p>
+    <Box className="layout">
+      <Box className="layout__top">
+        <SidebarMenu />
+
+        <Box className="layout__content">
+          <Container maxWidth="xl" className="panel__container">
+            <Outlet />
+          </Container>
+        </Box>
       </Box>
-    </Grid>
+    </Box>
   );
 };
